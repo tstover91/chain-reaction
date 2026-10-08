@@ -13,6 +13,8 @@ A small 3D arcade crash prototype: pull back on the green car and release, then 
 
 This repository contains the playable web export. The Godot development project is maintained separately. Scores are saved locally in your browser; there are no online leaderboards yet.
 
+Version 0.4 adds staged traffic damage: smoking cars retain their paint, further damage can ignite them, and an explosion leaves a black burnt body. Strong hits and burnout can shed wheels. Your launch car stays green.
+
 ## Credits
 
 Built with Godot Engine. Vehicle, road, city, particle, and impact sound assets by [Kenney](https://kenney.nl/), provided under CC0. Pack licenses are included in `licenses/`. The arcade blast sound was generated for this project without third-party samples.
