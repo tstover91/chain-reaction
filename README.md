@@ -38,3 +38,5 @@ GitHub Pages serves `main` at the repository root. `.nojekyll` preserves the sta
 Version 0.10: swipe anywhere over the gameplay area toward traffic to launch; swipe in any direction when Aftershock is ready to blast and propel the player. Fixed power, release activation and a direction preview at the car.
 
 Version 0.11 improves fire propagation with a slightly wider secondary heat radius and stronger thermal damage, independently of physical push. Damaged nearby cars can extend chains; fresh cars do not ignite from one secondary blast alone.
+
+Version 0.12 adds building collapses and persistent ruins, pooled dust/chunks and collapse audio, skid/scorch marks, clearer fire buildup and stronger bounded camera shake. Swipe controls remain stable and Quiet FX remains available.
