@@ -44,3 +44,5 @@ Version 0.12 adds building collapses and persistent ruins, pooled dust/chunks an
 Version 0.13 fills out Downtown with 17 destructible buildings, distant city rows, sidewalks, crossings, lamps/signals and service-yard detail. Repeated decoration is batched, and traffic lanes and the launch approach remain clear. The expanded map uses a separate best-score record.
 
 Version 0.14 adds cooler sidewalks, warm shop paving, green residential plots and paths, darker service yards and faint shared surface grain. Gameplay and score records stay the same.
+
+Version 0.15 adds Suburbs: a residential roundabout with four staggered traffic approaches, destructible houses/fences, lawns and a driveway launch. Tap MAP in the header (M on desktop) before launching, on results or while paused to switch maps. Each map has its own best score and the selected map is remembered. Both maps share the same crash, fire, Aftershock and scoring systems.
