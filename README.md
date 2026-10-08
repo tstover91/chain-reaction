@@ -7,7 +7,7 @@ A small 3D arcade crash prototype: pull back on the green car and release, then 
 ## Controls
 
 - Touch/mouse: pull back from the green car and release to launch.
-- Tap Aftershock when available. Three more destruction awards earn a second blast.
+- When Aftershock is ready, pull back on the green car and release to blast in any direction. Tap the button for a quick blast toward the junction. Three more destruction awards earn a second blast.
 - Retry resets the scene immediately. Pause contains sound and effects settings.
 - Keyboard: left/right arrows aim, Space launches, R retries, P/Escape pauses.
 
@@ -18,6 +18,8 @@ Version 0.4 adds staged traffic damage: smoking cars retain their paint, further
 Version 0.5 adds taxis, SUVs, and garbage trucks to the traffic mix. Taxis keep their yellow paint; SUVs resist blasts more; garbage trucks are larger, slower obstacles. All use the same damage stages and score once.
 
 Version 0.6 addresses first-collision stutter by preparing collision visuals, material variants, score glyphs and audio during loading, then reusing effect/debris visuals during play. Retry skips this preparation step.
+
+Version 0.7 adds directional Aftershock propulsion and keeps the player car inside the visible arena. A chosen blast replaces its old momentum so it can return to traffic.
 
 ## Credits
 
