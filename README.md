@@ -34,3 +34,5 @@ Built with Godot Engine. Vehicle, road, city, particle, and impact sound assets 
 ## Hosting
 
 GitHub Pages serves `main` at the repository root. `.nojekyll` preserves the static Godot export. All game asset URLs are relative so the project works under `/chain-reaction/`. This is a single-threaded Compatibility export.
+
+Version 0.10: swipe anywhere over the gameplay area toward traffic to launch; swipe in any direction when Aftershock is ready to blast and propel the player. Fixed power, release activation and a direction preview at the car.
