@@ -17,6 +17,8 @@ Version 0.4 adds staged traffic damage: smoking cars retain their paint, further
 
 Version 0.5 adds taxis, SUVs, and garbage trucks to the traffic mix. Taxis keep their yellow paint; SUVs resist blasts more; garbage trucks are larger, slower obstacles. All use the same damage stages and score once.
 
+Version 0.6 addresses first-collision stutter by preparing collision visuals, material variants, score glyphs and audio during loading, then reusing effect/debris visuals during play. Retry skips this preparation step.
+
 ## Credits
 
 Built with Godot Engine. Vehicle, road, city, particle, and impact sound assets by [Kenney](https://kenney.nl/), provided under CC0. Pack licenses are included in `licenses/`. The arcade blast sound was generated for this project without third-party samples.
