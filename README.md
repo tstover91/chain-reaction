@@ -36,3 +36,5 @@ Built with Godot Engine. Vehicle, road, city, particle, and impact sound assets 
 GitHub Pages serves `main` at the repository root. `.nojekyll` preserves the static Godot export. All game asset URLs are relative so the project works under `/chain-reaction/`. This is a single-threaded Compatibility export.
 
 Version 0.10: swipe anywhere over the gameplay area toward traffic to launch; swipe in any direction when Aftershock is ready to blast and propel the player. Fixed power, release activation and a direction preview at the car.
+
+Version 0.11 improves fire propagation with a slightly wider secondary heat radius and stronger thermal damage, independently of physical push. Damaged nearby cars can extend chains; fresh cars do not ignite from one secondary blast alone.
