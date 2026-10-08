@@ -25,6 +25,8 @@ Version 0.8 adds a four-second chain multiplier: ×2 at three events, ×3 at six
 
 Version 0.8.1 adds larger outlined point popups, lime multiplier callouts and orange explosion bonuses over the cars. Labels follow their source briefly, with limits and nearby tier coalescing to keep the pileup readable. Scoring and best-score records are unchanged from 0.8.
 
+Version 0.9 replaces the scoring timer with explosion chains and blast combos. A car igniting the next car advances causal depth; siblings ignited by one blast form a separate combo when they detonate. Wreck/scenery values stay flat, while each car explosion earns 50 times its own depth and same-blast groups add growing combo bonuses. The HUD/results show chain depth and combo size separately. Fuel tanks can carry chains onward. This scoring version uses a separate best record.
+
 ## Credits
 
 Built with Godot Engine. Vehicle, road, city, particle, and impact sound assets by [Kenney](https://kenney.nl/), provided under CC0. Pack licenses are included in `licenses/`. The arcade blast sound was generated for this project without third-party samples.
