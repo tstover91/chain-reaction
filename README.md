@@ -23,6 +23,8 @@ Version 0.7 adds directional Aftershock propulsion and keeps the player car insi
 
 Version 0.8 adds a four-second chain multiplier: ×2 at three events, ×3 at six, and ×4 at ten. New wrecks, destroyed scenery and first traffic-car explosions extend it. Each car explosion adds 50 base points once; new awards use the current multiplier. Banked points stay after the chain expires. The HUD shows chain progress, tier cues and actual awards, with explosions and best chain in results. Best scores start in a separate record for this scoring version.
 
+Version 0.8.1 adds larger outlined point popups, lime multiplier callouts and orange explosion bonuses over the cars. Labels follow their source briefly, with limits and nearby tier coalescing to keep the pileup readable. Scoring and best-score records are unchanged from 0.8.
+
 ## Credits
 
 Built with Godot Engine. Vehicle, road, city, particle, and impact sound assets by [Kenney](https://kenney.nl/), provided under CC0. Pack licenses are included in `licenses/`. The arcade blast sound was generated for this project without third-party samples.
