@@ -40,3 +40,5 @@ Version 0.10: swipe anywhere over the gameplay area toward traffic to launch; sw
 Version 0.11 improves fire propagation with a slightly wider secondary heat radius and stronger thermal damage, independently of physical push. Damaged nearby cars can extend chains; fresh cars do not ignite from one secondary blast alone.
 
 Version 0.12 adds building collapses and persistent ruins, pooled dust/chunks and collapse audio, skid/scorch marks, clearer fire buildup and stronger bounded camera shake. Swipe controls remain stable and Quiet FX remains available.
+
+Version 0.13 fills out Downtown with 17 destructible buildings, distant city rows, sidewalks, crossings, lamps/signals and service-yard detail. Repeated decoration is batched, and traffic lanes and the launch approach remain clear. The expanded map uses a separate best-score record.
