@@ -21,6 +21,8 @@ Version 0.6 addresses first-collision stutter by preparing collision visuals, ma
 
 Version 0.7 adds directional Aftershock propulsion and keeps the player car inside the visible arena. A chosen blast replaces its old momentum so it can return to traffic.
 
+Version 0.8 adds a four-second chain multiplier: ×2 at three events, ×3 at six, and ×4 at ten. New wrecks, destroyed scenery and first traffic-car explosions extend it. Each car explosion adds 50 base points once; new awards use the current multiplier. Banked points stay after the chain expires. The HUD shows chain progress, tier cues and actual awards, with explosions and best chain in results. Best scores start in a separate record for this scoring version.
+
 ## Credits
 
 Built with Godot Engine. Vehicle, road, city, particle, and impact sound assets by [Kenney](https://kenney.nl/), provided under CC0. Pack licenses are included in `licenses/`. The arcade blast sound was generated for this project without third-party samples.
