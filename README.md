@@ -65,3 +65,9 @@ scores remain intact. Repeated background models retain the same rendering batch
 
 Blended building and landscaping ground into the surrounding terrain by removing
 individual grass and paving pads. Existing gameplay is unchanged.
+
+## v0.20
+
+Rounds now have a fixed thirty-car traffic roster, a final-wave cue and crashed/30
+results. Traffic continues at existing lane speeds/gaps until the roster is delivered,
+then results wait for the tail and fires. Old timed records remain stored separately.
