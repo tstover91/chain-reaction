@@ -60,3 +60,8 @@ schemas are protected from older builds. Core gameplay rules remain unchanged.
 Added varied building/roof colors, matching colored ruins, and destructible house-yard
 fence sections and planters on all four maps. Existing gameplay rules and local best
 scores remain intact. Repeated background models retain the same rendering batches.
+
+## v0.19
+
+Blended building and landscaping ground into the surrounding terrain by removing
+individual grass and paving pads. Existing gameplay is unchanged.
