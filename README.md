@@ -71,3 +71,8 @@ individual grass and paving pads. Existing gameplay is unchanged.
 Rounds now have a fixed thirty-car traffic roster, a final-wave cue and crashed/30
 results. Traffic continues at existing lane speeds/gaps until the roster is delivered,
 then results wait for the tail and fires. Old timed records remain stored separately.
+
+## v0.21
+
+Shortened the ending when all arrivals are complete, both Aftershocks are spent,
+no fires remain, and only one or two clean cars are still crawling out.
