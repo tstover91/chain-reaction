@@ -109,3 +109,11 @@ for the ground and roundabout island. 589 core checks and native captures passed
 Version 0.26.2 strengthens the grass brightness change to a lighter green
 (#9abd72); the previous camera and larger buildings remain. Native captures
 verify the shared grass material on the four maps and roundabout island.
+
+Version 0.27.0 adds a larger results panel with cars crashed, best chain
+and five score categories: wrecks, destruction, special vehicle premium,
+explosions and combos. The categories add up to the existing total; police
+pay the existing 100 wreck points plus 400 special premium. No score rules
+or save keys change. The whole panel retries immediately, and the existing
+Retry button remains available. English and Spanish renders verified.
+Validation: 589 core, 52 special-vehicle and 197 localization/save checks.
