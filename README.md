@@ -74,5 +74,6 @@ then results wait for the tail and fires. Old timed records remain stored separa
 
 ## v0.21
 
-Shortened the ending when all arrivals are complete, both Aftershocks are spent,
+Shortened the ending when all arrivals are complete, at least one Aftershock is used and no blast is ready,
 no fires remain, and only one or two clean cars are still crawling out.
+
