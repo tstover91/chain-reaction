@@ -48,3 +48,9 @@ Version 0.14 adds cooler sidewalks, warm shop paving, green residential plots an
 Version 0.15 adds Suburbs: a residential roundabout with four staggered traffic approaches, destructible houses/fences, lawns and a driveway launch. Tap MAP in the header (M on desktop) before launching, on results or while paused to switch maps. Each map has its own best score and the selected map is remembered. Both maps share the same crash, fire, Aftershock and scoring systems.
 
 Version 0.16 adds Crossroads and Main Street alongside Downtown and Suburbs. Crossroads has a central four-way intersection with alternating paired traffic waves. Main Street has two opposing T-junctions linked by a main road, with turning traffic and nearby destruction targets. MAP in the header (M on desktop) cycles through the four maps, each with its own best score. Launch, damage, scoring, Aftershock, fire and attempt-budget rules are shared across every map.
+
+## v0.17
+
+Added English/Spanish interface catalogs and a pause language selector with persistence.
+Versioned local save migrations preserve existing map bests and preferences; newer save
+schemas are protected from older builds. Core gameplay rules remain unchanged.
