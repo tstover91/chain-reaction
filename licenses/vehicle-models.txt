@@ -1,0 +1,12 @@
+Community vehicle model attribution
+
+CAR Model by Ignition Labs
+https://poly.pizza/m/5zUWP5UsLg-
+Humvee by madtrollstudio
+https://poly.pizza/m/Ebryot9iKM
+
+Both source listings declare Creative Commons Attribution (CC BY).
+License overview: https://creativecommons.org/licenses/by/
+Source listings linked above carry the original license declaration.
+Changes: model scale/orientation/placement normalized; player body tinted green.
+Models are included in Chain Reaction with attribution to their respective creators.

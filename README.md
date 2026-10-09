@@ -117,3 +117,21 @@ pay the existing 100 wreck points plus 400 special premium. No score rules
 or save keys change. The whole panel retries immediately, and the existing
 Retry button remains available. English and Spanish renders verified.
 Validation: 589 core, 52 special-vehicle and 197 localization/save checks.
+
+Version 0.28.0 adds freely selectable Balanced, Sports and Humvee launch vehicles.
+The aim-phase button cycles choices without resetting traffic or the 15-second
+launch countdown. Retry/map changes retain selection; saved stable IDs restore
+it on startup. Balanced uses the original best-score key, while Sports/Humvee
+keep separate local bests. Scoring, charge thresholds, blast radius/push and
+round timing are shared. New specs contain model transforms, paint mesh names,
+launch/kick scaling and stable display/selection IDs for future additions.
+
+Balanced: mass 1.35, speed 30, kick 18. Sports: mass 1.05, speed 33.6, kick 21.24.
+Humvee: mass 1.9, speed 26.4, kick 14.76. Sports uses its four separate wheels;
+Humvee remains one visual mesh and uses the existing generic debris. Both remain
+green and inside the existing play bounds. Their shader/material variants are
+prewarmed behind the loading cover. Runtime chassis/debris/effect caps remain.
+Attribution to Ignition Labs and madtrollstudio appears in Pause and the bundled
+community vehicle-models.txt, also staged in the site's licenses directory.
+Validation: 589 core, 148 player-choice/round checks and 218 localization/save checks.
+Twelve complete map/vehicle rounds tested; native selector captures in en/es.
