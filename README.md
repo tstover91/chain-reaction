@@ -8,6 +8,9 @@ wood sounds for fences, makes glass occasional and softens the chain chime.
 Version 0.22.1 removes the chain/combo chime completely, keeping crash sounds
 and visual score feedback.
 
+Version 0.23 uses Kenney Sci-Fi Sounds for varied vehicle explosions and a
+stronger Aftershock crunch/bass. The CC0 pack license is included in `licenses/`.
+
 [Play Chain Reaction](https://tstover91.github.io/chain-reaction/)
 
 ## Controls
