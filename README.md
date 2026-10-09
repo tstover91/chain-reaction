@@ -135,3 +135,12 @@ Attribution to Ignition Labs and madtrollstudio appears in Pause and the bundled
 community vehicle-models.txt, also staged in the site's licenses directory.
 Validation: 589 core, 148 player-choice/round checks and 218 localization/save checks.
 Twelve complete map/vehicle rounds tested; native selector captures in en/es.
+
+
+Version 0.29.0 adds local development foundations: shared Light/Medium/Heavy
+player physics profiles, stable traffic vehicle IDs, independent saved paint
+choice, an authored round setup, and one persisted completed-round record.
+Existing vehicle behavior, camera, scores and best records are preserved.
+Save schema 2 migrates older preferences safely. No daily mode, currency, color
+picker, accounts, ads or online leaderboard is enabled. See game/docs/FOUNDATIONS.md
+in the development workspace for extension boundaries and verification.
