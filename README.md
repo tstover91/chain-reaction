@@ -100,3 +100,8 @@ no fires remain, and only one or two clean cars are still crawling out.
 Version 0.26.0 uses a steeper, centered overhead camera with a slightly wider view.
 Buildings are broader and 20% lower, fitted around existing yards and roads.
 Building collision, ruins and destruction labels follow the revised proportions.
+
+Version 0.26.1 restores the previous camera position (3,30,28), width 35
+and focus (0,0,2.5), retaining the larger, lower buildings from 0.26.0.
+Grass is slightly brighter and greener, using the shared terrain material
+for the ground and roundabout island. 589 core checks and native captures passed.
