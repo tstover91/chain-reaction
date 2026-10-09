@@ -5,6 +5,9 @@ A small 3D arcade crash prototype: pull back on the green car and release, then 
 Version 0.22 replaces ringing collision sounds with short metal/thud mixes, adds
 wood sounds for fences, makes glass occasional and softens the chain chime.
 
+Version 0.22.1 removes the chain/combo chime completely, keeping crash sounds
+and visual score feedback.
+
 [Play Chain Reaction](https://tstover91.github.io/chain-reaction/)
 
 ## Controls
