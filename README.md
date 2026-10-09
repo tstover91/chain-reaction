@@ -96,3 +96,7 @@ then results wait for the tail and fires. Old timed records remain stored separa
 Shortened the ending when all arrivals are complete, at least one Aftershock is used and no blast is ready,
 no fires remain, and only one or two clean cars are still crawling out.
 
+
+Version 0.26.0 uses a steeper, centered overhead camera with a slightly wider view.
+Buildings are broader and 20% lower, fitted around existing yards and roads.
+Building collision, ruins and destruction labels follow the revised proportions.
