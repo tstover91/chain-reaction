@@ -11,6 +11,10 @@ and visual score feedback.
 Version 0.23 uses Kenney Sci-Fi Sounds for varied vehicle explosions and a
 stronger Aftershock crunch/bass. The CC0 pack license is included in `licenses/`.
 
+Version 0.24 restores timed rounds: fifteen seconds to launch (then auto-launch),
+twenty seconds of incoming traffic and a twenty-eight-second round limit after
+launch. Pause stops the clocks. Timed-format best scores are stored separately.
+
 [Play Chain Reaction](https://tstover91.github.io/chain-reaction/)
 
 ## Controls
