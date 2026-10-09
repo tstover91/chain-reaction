@@ -15,6 +15,10 @@ Version 0.24 restores timed rounds: fifteen seconds to launch (then auto-launch)
 twenty seconds of incoming traffic and a twenty-eight-second round limit after
 launch. Pause stops the clocks. Timed-format best scores are stored separately.
 
+Version 0.25 adds a faster 500-point police target and marked explosive cargo
+truck, with approach warnings. A third Aftershock requires five new destruction
+awards after the second blast. All maps share these rules and the 24-car cap.
+
 [Play Chain Reaction](https://tstover91.github.io/chain-reaction/)
 
 ## Controls
