@@ -105,3 +105,7 @@ Version 0.26.1 restores the previous camera position (3,30,28), width 35
 and focus (0,0,2.5), retaining the larger, lower buildings from 0.26.0.
 Grass is slightly brighter and greener, using the shared terrain material
 for the ground and roundabout island. 589 core checks and native captures passed.
+
+Version 0.26.2 strengthens the grass brightness change to a lighter green
+(#9abd72); the previous camera and larger buildings remain. Native captures
+verify the shared grass material on the four maps and roundabout island.
