@@ -19,6 +19,8 @@ Version 0.25 adds a faster 500-point police target and marked explosive cargo
 truck, with approach warnings. A third Aftershock requires five new destruction
 awards after the second blast. All maps share these rules and the 24-car cap.
 
+Version 0.25.1 shows points with DESTRUCTION above destroyed buildings/scenery.
+
 [Play Chain Reaction](https://tstover91.github.io/chain-reaction/)
 
 ## Controls
