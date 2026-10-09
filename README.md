@@ -54,3 +54,9 @@ Version 0.16 adds Crossroads and Main Street alongside Downtown and Suburbs. Cro
 Added English/Spanish interface catalogs and a pause language selector with persistence.
 Versioned local save migrations preserve existing map bests and preferences; newer save
 schemas are protected from older builds. Core gameplay rules remain unchanged.
+
+## v0.18
+
+Added varied building/roof colors, matching colored ruins, and destructible house-yard
+fence sections and planters on all four maps. Existing gameplay rules and local best
+scores remain intact. Repeated background models retain the same rendering batches.
