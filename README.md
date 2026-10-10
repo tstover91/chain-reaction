@@ -184,3 +184,13 @@ on-screen objects). Position and focus translate together one unit toward the
 upper map to preserve the viewing angle and balance margins around player bounds.
 All-map touch margins, maximum-shake visibility, offscreen traffic and swipe
 projection are verified. Portrait framing, gameplay and best-score keys stay unchanged.
+
+
+Version 0.32.0 fixes the landscape movement region: the old portrait X ±13 clamp
+now follows the gameplay camera with a whole-car visibility margin. Every player
+model, map change, and retry receives the same precomputed region; Aftershock can
+send the car inward from its edges. Newly reachable houses, buildings, fences,
+trees and containers use visible destructible colliders rather than background-only
+models. Distant scenery remains batched. Startup font warmup includes landscape HUD
+sizes. Best scores are separated by orientation and the updated round format because
+movement reach and destruction targets affect score eligibility. Earlier records remain saved.
