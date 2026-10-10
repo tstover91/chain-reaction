@@ -242,3 +242,11 @@ bonuses, explosions, then combos. The active row is highlighted and the running 
 matches the counted category values. Each nonzero row takes 0.4 seconds with a short
 transition; zero rows skip the wait. Retry stays immediate and Quiet FX shows all
 final values immediately. Scoring, saved results and round timing are unchanged.
+
+
+Version 0.36.0 slightly raises vehicle damage thresholds across all maps: meaningful
+collision strength increases from 1.8 to 1.9, and accumulated damage required for fire
+increases from 15 to 16 (about 6%). The smoke warning, explosion fuse, blast heat,
+part-detachment thresholds and vehicle stats retain their existing values. Round
+records now include damage settings; updated damage rules use a separate best-score
+key while retaining historical records.
