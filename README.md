@@ -250,3 +250,9 @@ increases from 15 to 16 (about 6%). The smoke warning, explosion fuse, blast hea
 part-detachment thresholds and vehicle stats retain their existing values. Round
 records now include damage settings; updated damage rules use a separate best-score
 key while retaining historical records.
+
+
+Version 0.36.1 reduces simultaneous chassis from 24 to 22 (including the player),
+across all maps. Special arrival slots stay reserved; traffic timing, total supply
+budget and round duration stay unchanged. Setup descriptors record the cap, with
+a new round-rule best-score key retaining older records.
