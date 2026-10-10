@@ -256,3 +256,6 @@ Version 0.36.1 reduces simultaneous chassis from 24 to 22 (including the player)
 across all maps. Special arrival slots stay reserved; traffic timing, total supply
 budget and round duration stay unchanged. Setup descriptors record the cap, with
 a new round-rule best-score key retaining older records.
+
+Version 0.36.2 further lowers simultaneous chassis to 20, including the player.
+Special reservations, arrival timing and round duration remain unchanged.
