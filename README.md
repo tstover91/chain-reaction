@@ -276,3 +276,23 @@ The result Combo bonuses row includes both vehicle and object bonuses; round
 records separately identify object combo points and best count. New scoring
 rules separate current bests from retained historical records. Traffic, physical
 damage phases, round timing and the 20-chassis cap are unchanged.
+
+
+Version 0.38.0 re-themes Crossroads as Industrial while retaining its stable map
+ID and four-way traffic routes. Open warehouse yards, cargo rows and three amber
+marked tank outlets replace the commercial core; its menu preview is refreshed.
+Only this map currently enables the reusable earned finale controller. Spending
+the third aftershock arms a six-event meter before damage is applied, so that
+blast contributes immediately. Each newly scored wreck, vehicle explosion or
+prop destruction counts once; earlier actions and repeat hits do not count.
+Full charge gives a 0.9-second warning followed by three tank-yard blasts 0.55
+seconds apart. Blasts use existing capped effects and normal damage/scoring:
+5-unit push radius, 6-unit heat reach, heat 14 (below fresh-car ignition), push 12.
+The linked outlets represent underground fuel: wrecked tank housings cannot
+consume the earned event early, and their ordinary destruction reward pays once.
+There is no fixed finale jackpot. Pause freezes countdowns, Retry restores all
+state and targets, and changing maps disables the event where not configured.
+Traffic and normal round timing remain unchanged. An already-earned finale and
+its resulting fire may use at most four extra seconds beyond the normal deadline;
+an incomplete meter does not extend a round. New round-rule keys separate current
+bests, and round records include finale configuration/progress/detonations.
