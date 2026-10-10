@@ -313,3 +313,19 @@ removed. Normal vehicle/prop/explosion/chain scoring and the bounded four-second
 resolution grace remain. Retry restores health, attached visuals and event state.
 The map preview is refreshed; setup records include landmark health, and updated
 round rules separate new local bests while retaining historical records.
+
+
+Version 0.40.0 increases chassis travel without increasing aftershock damage.
+Aftershock push is 30 (damage remains 22), secondary push 14 (heat remains 14),
+and blast impulse falls continuously from 1.45 times base power at the center to
+0.20 at its physical edge. Outer heat still applies no shove. Meaningful involved
+car collisions get one bounded, mass-sensitive extra separation impulse per pair;
+player recoil is reduced to preserve control. Wreck damping decreases from 0.8 to
+0.55. The existing 38-speed blast cap, damage thresholds and player kick remain.
+Burnt traffic shells can deliver a final fresh physical collision before removal.
+Contacts already present at burnout and a short 0.2-second settling grace do not
+consume that hit. Contact reports and normal scoring resolve before safe removal,
+so the victim retains damage and points. Shells that never hit anything clear after
+six active seconds, using existing capped fragment effects; pause freezes age.
+Player chassis never retires, and awarded IDs remain banked after a shell clears.
+Retry clears pending retirement. New physics rule keys retain historical bests.
