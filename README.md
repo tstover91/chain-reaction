@@ -259,3 +259,20 @@ a new round-rule best-score key retaining older records.
 
 Version 0.36.2 further lowers simultaneous chassis to 20, including the player.
 Special reservations, arrival timing and round duration remain unchanged.
+
+
+Version 0.37.0 rebalances scoring: ordinary wreck 100, explosion 100 times its
+causal depth, small scenery 25, containers/dumpsters 100, fuel tanks 200 and
+buildings 300. Values depend on object type, including promoted landscape props.
+Police pays 300 on wreck and a flat 300 premium on explosion; delivery pays 200
+on wreck and a flat 200 premium on explosion. Both also earn standard causal
+explosion and sibling-combo awards. Flat special premiums are isolated in the
+special result row and never multiplied or awarded twice.
+Three unique environmental destructions with at most two active seconds between
+awards start an object combo. Incremental bonuses are 25, 50, 75, then 100 for
+each further object; duplicates cannot refresh the window. Pause freezes it,
+Retry clears it. Amber object-combo callouts remain inside existing popup caps.
+The result Combo bonuses row includes both vehicle and object bonuses; round
+records separately identify object combo points and best count. New scoring
+rules separate current bests from retained historical records. Traffic, physical
+damage phases, round timing and the 20-chassis cap are unchanged.
