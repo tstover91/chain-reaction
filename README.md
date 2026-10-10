@@ -235,3 +235,10 @@ The selection screen shows offline previews of the actual three player cars, rel
 speed/weight/blast bars, readable comparisons, clearer pressed states and a short menu
 fade. Quiet FX disables the pulse/fade. Both layouts and English/Spanish are supported.
 Gameplay stats, scoring, save schema and personal-best keys remain unchanged.
+
+
+Version 0.35.1 tallies results one category at a time: wrecks, destruction, special
+bonuses, explosions, then combos. The active row is highlighted and the running total
+matches the counted category values. Each nonzero row takes 0.4 seconds with a short
+transition; zero rows skip the wait. Retry stays immediate and Quiet FX shows all
+final values immediately. Scoring, saved results and round timing are unchanged.
