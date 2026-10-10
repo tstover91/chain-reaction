@@ -163,3 +163,17 @@ past the landscape camera edges, with extra margin for camera shake and portrait
 comparison. Downtown roads now use the existing static visual batches. Background
 ground coverage grows to match; traffic routes, spawn/exit points, physical floor,
 player bounds, destructible targets and scoring remain unchanged.
+
+
+Version 0.31.0 completes the landscape level pass across Downtown, Suburbs,
+Crossroads and Main Street. Wider terrain blocks, residential yards, commercial
+frontage, service parking, trees and street furniture fill the camera's new view;
+repeated background models and markings use existing static batches. Paved blocks
+share continuous terrain instead of separate pads around each building.
+Traffic routes now begin/end offscreen at 42 units, with retirement beyond the
+view and adjusted startup lead time to keep initial traffic near the junction.
+The central launch locations, reachable destruction targets, 20-second arrivals,
+15-second launch window, 28-second limit, scoring and pool caps remain unchanged.
+Expanded approaches occupy the same 24-chassis pool, including offscreen cars.
+Updated layouts use new map score IDs; old best-score sections remain saved.
+Both portrait and landscape entry/exit visibility are checked under maximum shake.
