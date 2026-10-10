@@ -144,3 +144,15 @@ Existing vehicle behavior, camera, scores and best records are preserved.
 Save schema 2 migrates older preferences safely. No daily mode, currency, color
 picker, accounts, ads or online leaderboard is enabled. See game/docs/FOUNDATIONS.md
 in the development workspace for extension boundaries and verification.
+
+
+Version 0.30.0 tests landscape as the default (1280x720 logical canvas).
+The 1280x552 gameplay viewport keeps the previous camera position/angle with
+width 66 so all existing player bounds retain a touch margin. Score, chain,
+countdown, selection, pause and result UI have dedicated landscape placement.
+Swipe controls still use the same screen-to-road projection; maps and physics,
+traffic timing, scoring, vehicle profiles and local best-score keys are unchanged.
+Portrait remains available with `?layout=portrait` in the web URL or native
+`-- --portrait` launch arguments. Landscape is a prototype, not a finalized
+orientation decision. Current play/effect caps remain in place; mobile performance
+and comfort still need real-device playtesting.
