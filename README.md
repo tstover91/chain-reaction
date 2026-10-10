@@ -203,3 +203,18 @@ and launch countdown; Play starts a fresh 15-second window. Maps & Vehicles in p
 and results returns to selection. In-game Retry and the result tap remain immediate.
 The hidden 3D viewport stops rendering while browsing; map warmup runs before Play is
 enabled. Gameplay rules and existing best-score keys remain unchanged.
+
+
+Version 0.34.0 strengthens local saving and platform lifecycle handling. Save writes
+are verified with checksums before replacement, retain a known-good backup, and
+recover backup or first-write staging data after damage/interruption. Historical
+best keys survive migration; stale tabs cannot lower bests, and newer save formats
+remain protected. Storage failures and recovery are shown on selection/pause.
+
+Focus loss, browser visibility/page events and native app suspension cancel swipes,
+stop pending audio, save preferences, pause round clocks/physics and suspend 3D
+rendering. Returning to a round requires Resume. Resize cancels input and pauses.
+The browser canvas fits CSS device safe areas and dynamic viewport height, with a
+rotate prompt on portrait touch devices. Native Android/iOS safe-area transforms
+keep the world, HUD and touch projection aligned. Gameplay and score rules are
+unchanged. Real phone interruption/notch testing remains part of release validation.
