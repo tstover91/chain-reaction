@@ -177,3 +177,10 @@ The central launch locations, reachable destruction targets, 20-second arrivals,
 Expanded approaches occupy the same 24-chassis pool, including offscreen cars.
 Updated layouts use new map score IDs; old best-score sections remain saved.
 Both portrait and landscape entry/exit visibility are checked under maximum shake.
+
+
+Version 0.31.1 tightens landscape camera width from 66 to 62 (about 6.5% larger
+on-screen objects). Position and focus translate together one unit toward the
+upper map to preserve the viewing angle and balance margins around player bounds.
+All-map touch margins, maximum-shake visibility, offscreen traffic and swipe
+projection are verified. Portrait framing, gameplay and best-score keys stay unchanged.
