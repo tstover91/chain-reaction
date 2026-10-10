@@ -194,3 +194,12 @@ trees and containers use visible destructible colliders rather than background-o
 models. Distant scenery remains batched. Startup font warmup includes landscape HUD
 sizes. Best scores are separated by orientation and the updated round format because
 movement reach and destruction targets affect score eligibility. Earlier records remain saved.
+
+
+Version 0.33.0 adds a start screen with four lightweight map previews, direct vehicle
+selection, the selected setup's personal best, language selection and one Play button.
+Map, car and paint preferences use the existing save format. Browsing pauses the world
+and launch countdown; Play starts a fresh 15-second window. Maps & Vehicles in pause
+and results returns to selection. In-game Retry and the result tap remain immediate.
+The hidden 3D viewport stops rendering while browsing; map warmup runs before Play is
+enabled. Gameplay rules and existing best-score keys remain unchanged.
