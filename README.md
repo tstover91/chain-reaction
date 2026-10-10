@@ -218,3 +218,20 @@ The browser canvas fits CSS device safe areas and dynamic viewport height, with 
 rotate prompt on portrait touch devices. Native Android/iOS safe-area transforms
 keep the world, HUD and touch projection aligned. Gameplay and score rules are
 unchanged. Real phone interruption/notch testing remains part of release validation.
+
+
+Version 0.35.0 polishes round results, crash feedback and vehicle selection. Results
+reveal the exact banked score over 0.9 seconds, flag new personal bests, and show cars
+wrecked and the biggest chain. Retry and result-panel taps work immediately throughout;
+Quiet FX shows the final score without a count-up. Existing settle/round timing is unchanged.
+
+Scores use blue, chains purple, destruction amber, explosions/combos orange and
+Aftershock lime. A persistent green bracket identifies the player during a crash;
+a charged Aftershock adds a restrained pulse. Busy awards prioritize important events,
+render at most eight score labels, skip overlapping labels, and show one highest-chain
+and one combo callout. Stored/scored awards and object/effect caps are unchanged.
+
+The selection screen shows offline previews of the actual three player cars, relative
+speed/weight/blast bars, readable comparisons, clearer pressed states and a short menu
+fade. Quiet FX disables the pulse/fade. Both layouts and English/Spanish are supported.
+Gameplay stats, scoring, save schema and personal-best keys remain unchanged.
