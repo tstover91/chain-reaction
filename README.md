@@ -156,3 +156,10 @@ Portrait remains available with `?layout=portrait` in the web URL or native
 `-- --portrait` launch arguments. Landscape is a prototype, not a finalized
 orientation decision. Current play/effect caps remain in place; mobile performance
 and comfort still need real-device playtesting.
+
+
+Version 0.30.1 extends road approaches and sidewalk/curb strips on all four maps
+past the landscape camera edges, with extra margin for camera shake and portrait
+comparison. Downtown roads now use the existing static visual batches. Background
+ground coverage grows to match; traffic routes, spawn/exit points, physical floor,
+player bounds, destructible targets and scoring remain unchanged.
