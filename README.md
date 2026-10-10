@@ -296,3 +296,20 @@ Traffic and normal round timing remain unchanged. An already-earned finale and
 its resulting fire may use at most four extra seconds beyond the normal deadline;
 an incomplete meter does not extend a round. New round-rule keys separate current
 bests, and round records include finale configuration/progress/detonations.
+
+
+Version 0.39.0 replaces the post-third-aftershock meter with a physical refinery
+target in Industrial. A large warehouse, roof tanks and chimneys share one
+collider, ruin and scoring identity. The landmark has 90 configurable health;
+normal scenery remains one-hit. Collisions and nearby blasts reduce health with
+a 32-damage per-hit cap and blast falloff measured from the footprint edge.
+A car can ram again after separating; continuous contact cannot farm damage.
+The localized world label shows remaining health and DESTROY TO DETONATE.
+Smoke begins below 67% health and warning lights below 34%, with materials warmed
+before play. Partial damage pays no points. Destroying the refinery pays its
+ordinary 300-point building award once and triggers the three staggered blasts,
+without requiring any aftershocks. The old meter/controller charge logic is
+removed. Normal vehicle/prop/explosion/chain scoring and the bounded four-second
+resolution grace remain. Retry restores health, attached visuals and event state.
+The map preview is refreshed; setup records include landmark health, and updated
+round rules separate new local bests while retaining historical records.
