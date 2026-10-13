@@ -1,12 +1,12 @@
 {
-  "version": "0.79.1",
-  "main_pack": "game-d81d9d6e72d715d1.pck",
-  "total_bytes": 47551443,
+  "version": "0.79.2",
+  "main_pack": "game-4098f14f2c8c353d.pck",
+  "total_bytes": 47560683,
   "files": [
     {
-      "name": "game-d81d9d6e72d715d1.pck",
-      "bytes": 7685672,
-      "sha256": "d81d9d6e72d715d16e529364766697eced2788c2c410a8f77796807b05df0e17"
+      "name": "game-4098f14f2c8c353d.pck",
+      "bytes": 7694912,
+      "sha256": "4098f14f2c8c353dd9a3a14a6a722a255fe0eef57819b2088fc68ea58e0ef585"
     },
     {
       "name": "index.apple-touch-icon.png",
@@ -26,7 +26,7 @@
     {
       "name": "index.html",
       "bytes": 10750,
-      "sha256": "48c88f7772e827d9f31bcbedd44aca82bea07ccf2004548836cd0d08320c65ae"
+      "sha256": "00a7c78d9f542d99454f84f32e21fa11c7f8f15b162410361f448c3f3f2ba8a1"
     },
     {
       "name": "index.icon.png",

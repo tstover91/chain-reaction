@@ -1,8 +1,8 @@
-# Playgama build — v0.79.1
+# Playgama build — v0.79.2
 
 Build with `./tools/Invoke-Godot.ps1 -Action Playgama`.
 
-Upload artifact: `game/builds/ChainReaction-Playgama-v0.79.1.zip`. `index.html` is at the ZIP root. The package includes one hashed pack, the single-threaded Godot WebGL runtime, worklets, icons, asset/font licenses, the host adapter and Bridge config. Duplicate `index.pck`, gzip sidecars, tests, reports, source files and local player saves do not ship. Inventory and SHA-256 hashes: `game/reports/playgama-build.json`.
+Upload artifact: `game/builds/ChainReaction-Playgama-v0.79.2.zip`. `index.html` is at the ZIP root. The package includes one hashed pack, the single-threaded Godot WebGL runtime, worklets, icons, asset/font licenses, the host adapter and Bridge config. Duplicate `index.pck`, gzip sidecars, tests, reports, source files and local player saves do not ship. Inventory and SHA-256 hashes: `game/reports/playgama-build.json`.
 
 This is a dedicated export preset with the `playgama` feature. Standard Web and Windows builds have no Playgama interface or advertising. GitHub Pages remains the published v0.78.9 build. Preparing this ZIP does not upload or submit a game.
 
