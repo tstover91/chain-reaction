@@ -1,0 +1,9 @@
+{
+  "zip": "game\\builds\\ChainReaction-Playgama-v0.79.0.zip",
+  "zip_bytes": 18505067,
+  "raw_bytes": 48274703,
+  "files": 26,
+  "pack": "game-f78031d58f394286.pck",
+  "sha256": "f7f0ca8bd40d4058a1d59aa9cfebef1c56ab4943ad66cb543c1f561b518a7c41",
+  "checks": "ZIP CRC, manifest hashes, local HTML asset references, root HTML and no duplicate pack passed"
+}

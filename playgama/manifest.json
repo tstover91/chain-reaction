@@ -1,0 +1,140 @@
+{
+  "version": "0.79.0",
+  "main_pack": "game-f78031d58f394286.pck",
+  "total_bytes": 48274703,
+  "files": [
+    {
+      "name": "game-f78031d58f394286.pck",
+      "bytes": 8403048,
+      "sha256": "f78031d58f394286274f1aca12a4c3914f91d4de3f230fe71b74129792849742"
+    },
+    {
+      "name": "index.apple-touch-icon.png",
+      "bytes": 7576,
+      "sha256": "48471a2bb7fea64d078beced4df4c2af03796e897f1a558126483a43cc40cc3c"
+    },
+    {
+      "name": "index.audio.position.worklet.js",
+      "bytes": 2973,
+      "sha256": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8"
+    },
+    {
+      "name": "index.audio.worklet.js",
+      "bytes": 7298,
+      "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
+    },
+    {
+      "name": "index.html",
+      "bytes": 17254,
+      "sha256": "4250e2fe529cc6c2ac0859250d0bd7b33e667b2e309526539ac7fcdca5c08988"
+    },
+    {
+      "name": "index.icon.png",
+      "bytes": 3618,
+      "sha256": "4d4e65ebbb183d7bcd5e24332056c893f0823f414b2ea8b1a4373bc67bf36503"
+    },
+    {
+      "name": "index.js",
+      "bytes": 279815,
+      "sha256": "68586d6daafc93c6e697b3fb258976874aa7459b8931165ebb1dc3c9614cc42c"
+    },
+    {
+      "name": "index.png",
+      "bytes": 21443,
+      "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e"
+    },
+    {
+      "name": "index.wasm",
+      "bytes": 39513091,
+      "sha256": "35116f68540ac41acf7d71ea457added91b5e960a9cca3e2acc72918eaf01277"
+    },
+    {
+      "name": "licenses/community-vehicle-models.txt",
+      "bytes": 528,
+      "sha256": "5c0d9d4adfb159aad0f76180818a78f4c1c87b86ba8e21812a4180dbecf98666"
+    },
+    {
+      "name": "licenses/fonts-OFL.txt",
+      "bytes": 4377,
+      "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f"
+    },
+    {
+      "name": "licenses/kenney-car-kit-LICENSE.txt",
+      "bytes": 696,
+      "sha256": "c33b7f6453d134deae7b1b8493717d9ccfa754c25ab97f6de89b88f8fda19b00"
+    },
+    {
+      "name": "licenses/kenney-castle-CC0.txt",
+      "bytes": 713,
+      "sha256": "aac944f18106b3a3e29c6fdeec02523d4cab4c735abc01f5a8fa88a79ae173ef"
+    },
+    {
+      "name": "licenses/kenney-city-kit-roads-LICENSE.txt",
+      "bytes": 703,
+      "sha256": "87b9404aef5dff6162ae1e53a27bc6427fe1cdd2e2dd5ec05fdd25f17da10498"
+    },
+    {
+      "name": "licenses/kenney-commercial-License.txt",
+      "bytes": 708,
+      "sha256": "c38cee408d022e57e44e49f1cd655c2fe0dc881a07b881276b795215cdc0de69"
+    },
+    {
+      "name": "licenses/kenney-graveyard-CC0.txt",
+      "bytes": 702,
+      "sha256": "a48e274258386c6bcb5302f17eaab40304cd805cc68be2754e2452179418c70e"
+    },
+    {
+      "name": "licenses/kenney-impact-sounds-LICENSE.txt",
+      "bytes": 608,
+      "sha256": "b49aa9c56b04528b95913de13e506a0f7c5e807b9925db9bfef86af1f91120db"
+    },
+    {
+      "name": "licenses/kenney-industrial-License.txt",
+      "bytes": 708,
+      "sha256": "60a8c5c31191256ec9779dc18745dea6d69c46f4b29703459ce064c1765a59ea"
+    },
+    {
+      "name": "licenses/kenney-nature-LICENSE.txt",
+      "bytes": 611,
+      "sha256": "cb96b75e3560ac78d7a53ce6f083f4cdb5c53faea6141b62d63458dcfe1e4b9d"
+    },
+    {
+      "name": "licenses/kenney-particle-pack-LICENSE.txt",
+      "bytes": 651,
+      "sha256": "f9e70b81d8cc07c4e07c9f2eff1d94fd371a06070b18cb67c651c41158ec2975"
+    },
+    {
+      "name": "licenses/kenney-pirate-LICENSE.txt",
+      "bytes": 699,
+      "sha256": "5e99246a5a65fa3420a1a1c7a8616f096202c78866f73d7aacfe73c0aab0ca36"
+    },
+    {
+      "name": "licenses/kenney-sci-fi-sounds-LICENSE.txt",
+      "bytes": 571,
+      "sha256": "a9767b25c3533f69d03af136480efad08efba19a9f0d89616992b34c79fd6186"
+    },
+    {
+      "name": "licenses/kenney-suburban-License.txt",
+      "bytes": 706,
+      "sha256": "d778fa769a89a7d9f167bc337fdf8fc2144e47d9abb0c35eb6ad897c0ee24d0a"
+    },
+    {
+      "name": "licenses/kenney-watercraft-LICENSE.txt",
+      "bytes": 717,
+      "sha256": "f5f520f81277128fb422aebe334d2f08e6d8e5f7face6008885d8ff920253724"
+    },
+    {
+      "name": "playgama-bridge-config.json",
+      "bytes": 264,
+      "sha256": "bee9e7d45f0d41198c9e48e39ea73c1ee53911f8c5b2424447071b33e7d99967"
+    },
+    {
+      "name": "playgama-host.js",
+      "bytes": 4625,
+      "sha256": "2d02808df78a3c306233cf8dd67eb62143c4b61db2242d51a1b5ee2f3e5ffc65"
+    }
+  ],
+  "sdk": "https://bridge.playgama.com/v2/stable/playgama-bridge.js",
+  "orientation": "landscape",
+  "threads": false
+}
