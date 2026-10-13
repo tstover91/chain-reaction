@@ -111,7 +111,16 @@ body {
 
 		<!-- chain-host-start --><style>#game-frame { position: fixed; inset: 0; bottom: auto; height: 100%; height: 100dvh; box-sizing: border-box; display: flex; padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px); }
 #rotate-notice { position: fixed; inset: 0; z-index: 20; display: grid; place-items: center; padding: 30px; background: #0b1017; color: #ddff74; text-align: center; font: 24px sans-serif; }
-#rotate-notice[hidden] { display: none; }</style><script>// Small host adapter. No analytics, remote storage or access to engine internals.
+#rotate-notice[hidden] { display: none; }
+#stats-export { position: fixed; inset: 0; z-index: 40; display: grid; place-items: center; padding: max(12px, env(safe-area-inset-top)) max(12px, env(safe-area-inset-right)) max(12px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left)); box-sizing: border-box; background: #000b; font: 16px sans-serif; color: #e5edf3; }
+#stats-export section { width: min(760px, 100%); max-height: 100%; overflow: auto; box-sizing: border-box; background: #15212a; border: 2px solid #ddff74; border-radius: 12px; padding: 16px; }
+#stats-export h2 { margin: 0 0 8px; color: #ddff74; }
+#stats-export p { margin: 8px 0; overflow-wrap: anywhere; }
+#stats-export .export-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0; }
+#stats-export button, #stats-export a { font: bold 16px sans-serif; display: inline-grid; place-items: center; min-height: 48px; padding: 0 18px; box-sizing: border-box; border: 1px solid #718795; border-radius: 6px; background: #22313b; color: #e5edf3; text-decoration: none; cursor: pointer; }
+#stats-export a { color: #ddff74; border-color: #ddff74; }
+#stats-export [hidden] { display: none; }
+#stats-export textarea { width: 100%; box-sizing: border-box; color: #e5edf3; background: #0b1017; border: 1px solid #718795; border-radius: 6px; padding: 8px; font: 13px monospace; }</style><script>// Small host adapter. No analytics, remote storage or access to engine internals.
 (() => {
   const canvas = document.getElementById('canvas');
   const frame = document.createElement('div');
@@ -192,6 +201,7 @@ body {
     detach(callback) { callbacks.delete(callback); },
     setLanguage(value) {
       language = value.startsWith('es') ? 'es' : 'en';
+      document.documentElement.lang = language;
       rotate.textContent = language === 'es' ? 'Gira tu dispositivo para jugar' : 'Rotate your device to play';
     }
   };
@@ -207,10 +217,119 @@ body {
   new ResizeObserver(resize).observe(frame);
   resize();
 })();
+
+// Local-only browser export. File actions run from real DOM taps on mobile.
+(() => {
+  let closeCurrent = null;
+  const words = {
+    en: ['Export stats', 'Save file', 'Share file', 'Copy data', 'Close', 'Tap Save file. If the download is blocked, use Share file or Copy data.', 'Download requested. Check Chrome Downloads.', 'File shared.', 'Sharing canceled. You can still save or copy.', 'Sharing failed. Use Save file or Copy data.', 'Data copied. Paste it into a message or file.', 'Copy blocked. Press and hold the data below, then select all and copy.'],
+    es: ['Exportar estadísticas', 'Guardar archivo', 'Compartir archivo', 'Copiar datos', 'Cerrar', 'Pulsa Guardar archivo. Si se bloquea la descarga, comparte el archivo o copia los datos.', 'Descarga solicitada. Revisa las descargas de Chrome.', 'Archivo compartido.', 'Se canceló. Puedes guardar o copiar.', 'No se pudo compartir. Guarda o copia los datos.', 'Datos copiados. Pégalos en un mensaje o archivo.', 'No se pudo copiar. Mantén pulsados los datos, selecciona todo y copia.']
+  };
+  function showStatsExport(content, filename, mime) {
+    if (closeCurrent) closeCurrent();
+    const w = words[document.documentElement.lang?.startsWith('es') ? 'es' : 'en'];
+    const blob = new Blob([content], { type: mime + ';charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const overlay = document.createElement('div');
+    overlay.id = 'stats-export';
+    const panel = document.createElement('section');
+    panel.setAttribute('role', 'dialog');
+    panel.setAttribute('aria-modal', 'true');
+    panel.setAttribute('aria-labelledby', 'stats-export-title');
+    overlay.appendChild(panel);
+    const title = document.createElement('h2');
+    title.id = 'stats-export-title';
+    title.textContent = w[0];
+    panel.appendChild(title);
+    const name = document.createElement('p');
+    name.textContent = filename;
+    panel.appendChild(name);
+    const status = document.createElement('p');
+    status.setAttribute('role', 'status');
+    status.textContent = w[5];
+    panel.appendChild(status);
+    const actions = document.createElement('div');
+    actions.className = 'export-actions';
+    panel.appendChild(actions);
+    const save = document.createElement('a');
+    save.textContent = w[1];
+    save.href = url;
+    save.download = filename;
+    save.onclick = () => { status.textContent = w[6]; };
+    actions.appendChild(save);
+    const file = typeof File === 'function' ? new File([blob], filename, { type: mime }) : null;
+    const share = document.createElement('button');
+    share.textContent = w[2];
+    let shareSupported = false;
+    try { shareSupported = !!file && !!navigator.canShare?.({ files: [file] }) && typeof navigator.share === 'function'; } catch (_) {}
+    share.hidden = !shareSupported;
+    share.onclick = async () => {
+      share.disabled = true;
+      try {
+        await navigator.share({ files: [file] });
+        status.textContent = w[7];
+      } catch (error) {
+        status.textContent = error.name === 'AbortError' ? w[8] : w[9];
+      } finally { share.disabled = false; }
+    };
+    actions.appendChild(share);
+    const copy = document.createElement('button');
+    copy.textContent = w[3];
+    actions.appendChild(copy);
+    const close = document.createElement('button');
+    close.textContent = w[4];
+    actions.appendChild(close);
+    const text = document.createElement('textarea');
+    text.value = content;
+    text.readOnly = true;
+    text.rows = 5;
+    text.setAttribute('aria-label', w[0]);
+    panel.appendChild(text);
+    copy.onclick = async () => {
+      try {
+        await navigator.clipboard.writeText(content);
+        status.textContent = w[10];
+      } catch (_) {
+        text.focus();
+        text.select();
+        text.setSelectionRange(0, content.length);
+        status.textContent = w[11];
+      }
+    };
+    const previousFocus = document.activeElement;
+    function onKey(event) {
+      if (event.key === 'Escape') { event.preventDefault(); closeDialog(); }
+      if (event.key === 'Tab') {
+        const controls = [save, share, copy, close, text].filter(node => !node.hidden && !node.disabled);
+        const first = controls[0], last = controls[controls.length - 1];
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+      }
+    }
+    let closed = false;
+    function closeDialog() {
+      if (closed) return;
+      closed = true;
+      document.removeEventListener('keydown', onKey);
+      overlay.remove();
+      if (closeCurrent === closeDialog) closeCurrent = null;
+      // Mobile downloads may consume the blob after the dialog closes.
+      setTimeout(() => URL.revokeObjectURL(url), 60000);
+      previousFocus?.focus?.();
+    }
+    close.onclick = closeDialog;
+    closeCurrent = closeDialog;
+    document.addEventListener('keydown', onKey);
+    document.body.appendChild(overlay);
+    save.focus();
+    return true;
+  }
+  window.ChainReactionHost.showStatsExport = showStatsExport;
+})();
 </script><!-- chain-host-end -->
 <script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":0,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.wasm":39513091,"game-1721e09c01b0ae59.pck":8349528},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4,"mainPack":"game-1721e09c01b0ae59.pck"};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":0,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.wasm":39513091,"game-da85618c8eb3533f.pck":8371584},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4,"mainPack":"game-da85618c8eb3533f.pck"};
 if (new URLSearchParams(window.location.search).get('layout') === 'portrait') GODOT_CONFIG.args.push('--', '--portrait');
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
