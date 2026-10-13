@@ -1,12 +1,12 @@
 {
-  "version": "0.79.0",
-  "main_pack": "game-f78031d58f394286.pck",
-  "total_bytes": 48274703,
+  "version": "0.79.1",
+  "main_pack": "game-d81d9d6e72d715d1.pck",
+  "total_bytes": 47551443,
   "files": [
     {
-      "name": "game-f78031d58f394286.pck",
-      "bytes": 8403048,
-      "sha256": "f78031d58f394286274f1aca12a4c3914f91d4de3f230fe71b74129792849742"
+      "name": "game-d81d9d6e72d715d1.pck",
+      "bytes": 7685672,
+      "sha256": "d81d9d6e72d715d16e529364766697eced2788c2c410a8f77796807b05df0e17"
     },
     {
       "name": "index.apple-touch-icon.png",
@@ -25,8 +25,8 @@
     },
     {
       "name": "index.html",
-      "bytes": 17254,
-      "sha256": "4250e2fe529cc6c2ac0859250d0bd7b33e667b2e309526539ac7fcdca5c08988"
+      "bytes": 10750,
+      "sha256": "48c88f7772e827d9f31bcbedd44aca82bea07ccf2004548836cd0d08320c65ae"
     },
     {
       "name": "index.icon.png",
@@ -130,8 +130,8 @@
     },
     {
       "name": "playgama-host.js",
-      "bytes": 4625,
-      "sha256": "2d02808df78a3c306233cf8dd67eb62143c4b61db2242d51a1b5ee2f3e5ffc65"
+      "bytes": 5245,
+      "sha256": "7c95dce7c35b699e097f78cdfcb9237f87885483fb6887cf03cda3933ecf65bb"
     }
   ],
   "sdk": "https://bridge.playgama.com/v2/stable/playgama-bridge.js",

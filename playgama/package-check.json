@@ -1,9 +1,10 @@
 {
-  "zip": "game\\builds\\ChainReaction-Playgama-v0.79.0.zip",
-  "zip_bytes": 18505067,
-  "raw_bytes": 48274703,
+  "version": "0.79.1",
+  "zip": "game\\builds\\ChainReaction-Playgama-v0.79.1.zip",
+  "zip_bytes": 17831760,
+  "raw_bytes": 47551443,
   "files": 26,
-  "pack": "game-f78031d58f394286.pck",
-  "sha256": "f7f0ca8bd40d4058a1d59aa9cfebef1c56ab4943ad66cb543c1f561b518a7c41",
-  "checks": "ZIP CRC, manifest hashes, local HTML asset references, root HTML and no duplicate pack passed"
+  "pack": "game-d81d9d6e72d715d1.pck",
+  "sha256": "666025a78701092d8da9298d57d30ff05f8464257dfa9c1fb726f3e27f4d5f09",
+  "checks": "ZIP CRC, manifest hashes, parsed HTML scripts, JS syntax, local references, root HTML, one pack, context menu and no stats-export UI passed"
 }
